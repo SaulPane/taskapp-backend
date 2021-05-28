@@ -1,0 +1,27 @@
+{
+    "name": "express-tasks",
+    "version": "1.0.0",
+    "description": "Backend for Tasker app from Nuclio",
+    "main": "src/index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "test": "jest"
+    },
+    "author": "Alejandro Cano",
+    "license": "ISC",
+    "dependencies": {
+        "ajv": "^8.3.0",
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^9.0.2",
+        "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.12.8",
+        "nodemon": "^2.0.7",
+        "util": "^0.12.3"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
+}
