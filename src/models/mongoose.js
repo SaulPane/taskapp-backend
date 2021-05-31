@@ -4,8 +4,10 @@ const ajv = new Ajv();
 const mongoose = require('mongoose');
 const { encryptPassword } = require('../helpers/password');
 
+const uri = process.env.MONGODB_URI;
+
 //mongoose.connect(`mongodb+srv://Nucliostudent:tc13ybK3goJTQMpm@mongotraining.lk4fc.mongodb.net/tasker?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect(`mongodb+srv://admin:${process.env.MONGODB_PASSWORD}@nuclio.f4opn.mongodb.net/tasksOk?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const Task = mongoose.model('Task', {
