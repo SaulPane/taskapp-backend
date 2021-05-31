@@ -4,7 +4,8 @@ require('express-async-errors');
 const cors = require('cors');
 
 const app = express();
-const port = 8000;
+//const port = 8000;
+const port = process.env.PORT || 8000;
 
 const TaskRouter = require('./controllers/TaskRouter');
 const BoardRouter = require('./controllers/BoardRouter');
